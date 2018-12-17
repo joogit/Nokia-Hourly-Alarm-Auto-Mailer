@@ -103,15 +103,15 @@ $mail = new PHPMailer();
 $mail->SetLanguage("en", "/mail/language/");
 
 $mail->IsSMTP();                                      // set mailer to use SMTP
-$mail->Host = "172.16.10.170";  // specify main and backup server
+$mail->Host = "";  // specify main and backup server
 $mail->SMTPAuth = false; // turn on SMTP authentication
 $mail->Username = "";   // SMTP username
 $mail->Password = "";  // SMTP password
 
-$mail->From = "omc_bss@banglalinkgsm.com";
+$mail->From = "";
 $mail->FromName = "OMC BSS";
-$email_to="BSSPlanning@no.smtp.mail";
-$CC12 = "OMC_BSS@banglalinkgsm.com";
+$email_to="";
+$CC12 = "";
 
 if ( $email_to != '') { $mail->AddAddress( $email_to, "");}
 if ( $email_to1 != '') { $mail->AddAddress( $email_to1, "");}

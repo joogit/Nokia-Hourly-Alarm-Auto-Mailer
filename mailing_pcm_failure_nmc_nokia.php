@@ -50,22 +50,22 @@ if(mysql_num_rows($result4)!=0 OR mysql_num_rows($result5)!=0){
     $mail->SetLanguage("en", "/mail/language/");
 
     $mail->IsSMTP();                                      // set mailer to use SMTP
-    $mail->Host = "172.16.10.170";  // specify main and backup server
+    $mail->Host = "";  // specify main and backup server
     $mail->SMTPAuth = false; // turn on SMTP authentication
     $mail->Username = "";   // SMTP username
     $mail->Password = "";  // SMTP password
 
-    $mail->From = "omc_bss@banglalinkgsm.com";
+    $mail->From = "";
     $mail->FromName = "OMC BSS";
 
-    $email_to="supervision@banglalinkgsm.com";
-    $CC2 = "pkumar@banglalinkgsm.com";
-    $CC3 = "ijamil@banglalinkgsm.com";
+    $email_to="";
+    $CC2 = "";
+    $CC3 = "";
 
-    $CC4 = "assarker@banglalinkgsm.com";
-    $CC5 = "ahossain@banglalinkgsm.com";
-    $CC6 = "FAhmed@banglalinkgsm.com";
-    $CC12 = "OMC_BSS@banglalinkgsm.com";
+    $CC4 = "";
+    $CC5 = "";
+    $CC6 = "";
+    $CC12 = "";
 
 
     if ( $email_to != '') { $mail->AddAddress( $email_to, "");}

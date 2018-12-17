@@ -43,27 +43,27 @@ $mail = new PHPMailer();
 $mail->SetLanguage("en", "/mail/language/");
 
 $mail->IsSMTP();                                      // set mailer to use SMTP
-$mail->Host = "172.16.10.170";  // specify main and backup server
+$mail->Host = "";  // specify main and backup server
 $mail->SMTPAuth = false; // turn on SMTP authentication
 $mail->Username = "";   // SMTP username
 $mail->Password = "";  // SMTP password
 
-$mail->From = "omc_bss@banglalinkgsm.com";
+$mail->From = "";
 
 $mail->FromName = "OMC BSS";
 
 if ( $email_to != '') { $mail->AddAddress( $email_to, "");}
 
-$email_to="ashihaque@banglalinkgsm.com";	
-$email_to1="mkhaium@banglalinkgsm.com";	
-$email_to2="aktaruzzaman@banglalinkgsm.com";	
-//$email_to3="ankabir@banglalinkgsm.com";	
-$email_to4="kmustafa@banglalinkgsm.com";	
-$email_to5="azhaque@banglalinkgsm.com";	
-$email_to6="ijamil@banglalinkgsm.com";	
+$email_to="";	
+$email_to1="";	
+$email_to2="";	
+//$email_to3="";	
+$email_to4="";	
+$email_to5="";	
+$email_to6="";	
 
-$CC1 = "OMC_BSS@banglalinkgsm.com";
-$BCC="arafahossain@banglalinkgsm.com";
+$CC1 = "";
+$BCC="";
 
 if ( $email_to != '') { $mail->AddAddress( $email_to, "");}
 if ( $email_to1 != '') { $mail->AddAddress( $email_to1, "");}
